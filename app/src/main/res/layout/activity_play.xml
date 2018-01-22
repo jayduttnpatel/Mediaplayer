@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E3F2FD"
+    tools:context="com.example.android.mediaplayer.PlayActivity">
+
+    <TextView
+        android:paddingTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Song Name"
+        android:gravity="center"
+        android:textSize="@dimen/song_name_text_view"
+        android:background="#BBDEFB"
+        android:id="@+id/song_name"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_gravity="center"
+        android:src="@mipmap/default_image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="36dp"
+            android:layout_height="@dimen/duration_bar_height"
+            android:id="@+id/show_duratiom_textview"
+            android:textSize="@dimen/duration_text_view"
+            android:text="0:0"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/duration_bar_height"
+            android:id="@+id/show_duration_seekwbar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#BBDEFB">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/iconbar_height"
+            android:id="@+id/relay"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/replay"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/iconbar_height"
+            android:id="@+id/pause"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/pause"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/iconbar_height"
+            android:id="@+id/play"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/play"
+            android:layout_gravity="center_vertical"/>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/iconbar_height"
+            android:id="@+id/forward"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/forward"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="@dimen/list_view"
+        android:layout_height="@dimen/list_view"
+        android:src="@mipmap/audiotrack"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="@dimen/list_view">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_gravity="bottom"
+            android:id="@+id/song_name_text_view"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:text="Name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_gravity="top"
+            android:textColor="@android:color/white"
+            android:text="Details"
+            android:id="@+id/details_text_view"/>
+
+    </LinearLayout>
+</LinearLayout>

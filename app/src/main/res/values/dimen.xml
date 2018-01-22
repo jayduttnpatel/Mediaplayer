@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="iconbar_height">28dp</dimen>
+    <dimen name="duration_bar_height">32dp</dimen>
+    <dimen name="duration_text_view">18sp</dimen>
+    <dimen name="song_name_text_view">28sp</dimen>
+    <dimen name="list_view">66sp</dimen>
+</resources>
